@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
 import { Splitter } from '@progress/kendo-react-layout';
-
+import {SearchEngine} from './SearchEngine.jsx';
 import './styles.css';
 
 class App extends React.Component {
@@ -32,7 +32,7 @@ class App extends React.Component {
                     onChange={this.onChange}
                 >
                     <div>
-                        <h3>Sidebar content</h3>
+                        <SearchEngine/>
                         <p>Collapsible pane</p>
                     </div>
                     <h3>Main content</h3>
